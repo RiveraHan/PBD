@@ -1,0 +1,6 @@
+C:\Users\Hanzell\Documents\Clases de Sistemas\Proyectos C#\ProgramacionBD\capaEntidades\bin\Debug\capaEntidades.dll
+C:\Users\Hanzell\Documents\Clases de Sistemas\Proyectos C#\ProgramacionBD\capaEntidades\bin\Debug\capaEntidades.pdb
+C:\Users\Hanzell\Documents\Clases de Sistemas\Proyectos C#\ProgramacionBD\capaEntidades\obj\Debug\capaEntidades.csprojAssemblyReference.cache
+C:\Users\Hanzell\Documents\Clases de Sistemas\Proyectos C#\ProgramacionBD\capaEntidades\obj\Debug\capaEntidades.csproj.CoreCompileInputs.cache
+C:\Users\Hanzell\Documents\Clases de Sistemas\Proyectos C#\ProgramacionBD\capaEntidades\obj\Debug\capaEntidades.dll
+C:\Users\Hanzell\Documents\Clases de Sistemas\Proyectos C#\ProgramacionBD\capaEntidades\obj\Debug\capaEntidades.pdb
