@@ -19,14 +19,6 @@ namespace capaPresentacionWF
             InitializeComponent();
         }
 
-        private void ShowNewForm(object sender, EventArgs e)
-        {
-            Form childForm = new Form();
-            childForm.MdiParent = this;
-            childForm.Text = "Ventana " + childFormNumber++;
-            childForm.Show();
-        }
-
         private void OpenFile(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -102,6 +94,36 @@ namespace capaPresentacionWF
             {
                 childForm.Close();
             }
+        }
+
+        private void recursosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(Application.OpenForms["fRecursos"] != null)
+            {
+                Application.OpenForms["fRecursos"].Activate();
+            }
+            else
+            {
+                fRecursos ventana_recursos = new fRecursos();
+                ventana_recursos.MdiParent = this;
+                ventana_recursos.Show();
+            }
+        }
+
+        private void salirtoolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(PreClosingConfirmation() == System.Windows.Forms.DialogResult.Yes)
+            {
+                Dispose(true);
+                Application.Exit();
+            }
+
+        }
+
+        private DialogResult PreClosingConfirmation()
+        {
+            DialogResult res = System.Windows.Forms.MessageBox.Show("Esta seguro de que quiere cerrar la aplicación?", "Cerrar la Aplicación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            return res;
         }
     }
 }

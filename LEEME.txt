@@ -1,0 +1,9 @@
+En la base de datos lo único que cambia son los nombres de los campos y los nombres de los párametros.
+El script se lo comparto para que pueda hacer las pruebas.
+
+En cuanto al guardar una solicitud, en el campo textoBoxNivel deberá ingresar la i mayúscula es decir esta I, ya que,
+el campo nivel de la tabla Solicitud en la BD es de tipo varchar y el tamaño es(4), al parecer es un tamaño muy corto para
+asignar le un dato más grande que I y, modificar ese campo sería un trabajo tedioso ya que esa tabla esta protegida por las
+llaves foraneas, de esa forma decidi dejarlo así, Pero igualmente guarda, edita, elimina y busca todo está bien.
+
+Si algo no entiende me escribe. Gracias.
