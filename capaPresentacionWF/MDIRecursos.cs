@@ -19,17 +19,6 @@ namespace capaPresentacionWF
             InitializeComponent();
         }
 
-        private void OpenFile(object sender, EventArgs e)
-        {
-            OpenFileDialog openFileDialog = new OpenFileDialog();
-            openFileDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            openFileDialog.Filter = "Archivos de texto (*.txt)|*.txt|Todos los archivos (*.*)|*.*";
-            if (openFileDialog.ShowDialog(this) == DialogResult.OK)
-            {
-                string FileName = openFileDialog.FileName;
-            }
-        }
-
         private void SaveAsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog = new SaveFileDialog();
@@ -60,12 +49,7 @@ namespace capaPresentacionWF
 
         private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            toolStrip.Visible = toolBarToolStripMenuItem.Checked;
-        }
-
-        private void StatusBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            statusStrip.Visible = statusBarToolStripMenuItem.Checked;
+            toolStrip.Visible = respaldoStripMenuItem.Checked;
         }
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -124,6 +108,34 @@ namespace capaPresentacionWF
         {
             DialogResult res = System.Windows.Forms.MessageBox.Show("Esta seguro de que quiere cerrar la aplicación?", "Cerrar la Aplicación", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             return res;
+        }
+
+        private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(Application.OpenForms["fUsuarios"] != null)
+            {
+                Application.OpenForms["fUsuarios"].Activate();
+            }
+            else
+            {
+                fUsuarios ventana_usuarios = new fUsuarios();
+                ventana_usuarios.MdiParent = this;
+                ventana_usuarios.Show();
+            }
+        }
+
+        private void solicitudToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if(Application.OpenForms["fSolicitud"] != null)
+            {
+                Application.OpenForms["fSolicitud"].Activate();
+            }
+            else
+            {
+                fSolicitud ventana_solicitud = new fSolicitud();
+                ventana_solicitud.MdiParent = this;
+                ventana_solicitud.Show();
+            }
         }
     }
 }

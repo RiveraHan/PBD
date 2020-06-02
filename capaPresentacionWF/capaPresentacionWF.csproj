@@ -64,6 +64,12 @@
     <Compile Include="fSolicitud.Designer.cs">
       <DependentUpon>fSolicitud.cs</DependentUpon>
     </Compile>
+    <Compile Include="fUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fUsuarios.Designer.cs">
+      <DependentUpon>fUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="MDIRecursos.cs">
       <SubType>Form</SubType>
     </Compile>
