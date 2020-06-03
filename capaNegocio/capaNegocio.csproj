@@ -43,6 +43,7 @@
     <Compile Include="logicaNegocioComentario.cs" />
     <Compile Include="logicaNegocioCuentas.cs" />
     <Compile Include="logicaNegocioRecursos.cs" />
+    <Compile Include="logicaNegocioRespaldo.cs" />
     <Compile Include="logicaNegocioSolicitud.cs" />
     <Compile Include="logicaNegocioUsuario.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

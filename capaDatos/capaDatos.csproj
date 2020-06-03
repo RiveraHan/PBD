@@ -43,6 +43,7 @@
     <Compile Include="accesoDatosComentarios.cs" />
     <Compile Include="accesoDatosCuentas.cs" />
     <Compile Include="accesoDatosRecursos.cs" />
+    <Compile Include="accesoDatosRespaldoBD.cs" />
     <Compile Include="accesoDatosSolicitud.cs" />
     <Compile Include="accesoDatosUsuarios.cs" />
     <Compile Include="Conexion.cs" />

@@ -74,6 +74,7 @@
             this.menuStrip.Size = new System.Drawing.Size(816, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "MenuStrip";
+            this.menuStrip.Click += new System.EventHandler(this.menuStrip_Click);
             // 
             // fileCatalogo
             // 
@@ -94,7 +95,7 @@
             this.recursosToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.recursosToolStripMenuItem.Name = "recursosToolStripMenuItem";
             this.recursosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.recursosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.recursosToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.recursosToolStripMenuItem.Text = "&Recurso";
             this.recursosToolStripMenuItem.Click += new System.EventHandler(this.recursosToolStripMenuItem_Click);
             // 
@@ -104,14 +105,14 @@
             this.usuariosToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
             this.usuariosToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.usuariosToolStripMenuItem.Text = "&Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(159, 6);
             // 
             // cuentasToolStripMenuItem
             // 
@@ -119,13 +120,13 @@
             this.cuentasToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.cuentasToolStripMenuItem.Name = "cuentasToolStripMenuItem";
             this.cuentasToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.cuentasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.cuentasToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.cuentasToolStripMenuItem.Text = "&Cuentas";
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
             this.exitToolStripMenuItem.Text = "&Salir";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolsStripMenuItem_Click);
             // 
@@ -143,7 +144,7 @@
             this.solicitudToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Black;
             this.solicitudToolStripMenuItem.Name = "solicitudToolStripMenuItem";
             this.solicitudToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Z)));
-            this.solicitudToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.solicitudToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
             this.solicitudToolStripMenuItem.Text = "&Solicitud";
             this.solicitudToolStripMenuItem.Click += new System.EventHandler(this.solicitudToolStripMenuItem_Click);
             // 
@@ -163,7 +164,7 @@
             this.respaldoStripMenuItem.Name = "respaldoStripMenuItem";
             this.respaldoStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.respaldoStripMenuItem.Text = "&Respaldo BD";
-            this.respaldoStripMenuItem.Click += new System.EventHandler(this.ToolBarToolStripMenuItem_Click);
+            this.respaldoStripMenuItem.Click += new System.EventHandler(this.respaldoStripMenuItem_Click);
             // 
             // ayudaMenu
             // 

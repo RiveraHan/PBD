@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using capaNegocio;
 
 namespace capaPresentacionWF
 {
     public partial class MDIRecursos : Form
     {
+        logicaNegocioRespaldo logicaRespaldo = new logicaNegocioRespaldo();
         private int childFormNumber = 0;
 
         public MDIRecursos()
@@ -45,11 +47,6 @@ namespace capaPresentacionWF
 
         private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-        }
-
-        private void ToolBarToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            toolStrip.Visible = respaldoStripMenuItem.Checked;
         }
 
         private void CascadeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -136,6 +133,23 @@ namespace capaPresentacionWF
                 ventana_solicitud.MdiParent = this;
                 ventana_solicitud.Show();
             }
+        }
+
+        private void menuStrip_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void respaldoStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(logicaRespaldo.respaldoBD() > 0)
+                {
+                    MessageBox.Show("Respaldo realizado con éxito");
+                }
+            }
+            catch { MessageBox.Show("Error al realizar el respaldo"); }
         }
     }
 }
